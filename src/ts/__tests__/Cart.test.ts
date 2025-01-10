@@ -6,9 +6,7 @@ test('Testing add new movie', () => {
 
   cart.add(new Movie(14865,"Avengers", "Мстители", 1000, 2012, "USA", "Avengers Assemble!", ["Fantastic", "Action", "Adventure"], 137))
 
-  expect(cart.items).toEqual(
-    [
-      Movie {
+  expect(cart.items).toEqual([{
         id: 14865,
         name: 'Avengers',
         ruTitle: 'Мстители',
@@ -18,7 +16,6 @@ test('Testing add new movie', () => {
         slogan: 'Avengers Assemble!',
         genres: [ 'Fantastic', 'Action', 'Adventure' ],
         duration: 137
-      }
-    ]
+      }]
   )
 });
