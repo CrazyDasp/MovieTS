@@ -1,8 +1,8 @@
 export default interface Buyable {
     readonly id: number,
     readonly name: string,
-    readonly price: number,
     readonly ruTitle?: string,
+    readonly price: number,
     readonly releaseYear?: number,
     readonly country?: string,
     readonly slogan?: string,
